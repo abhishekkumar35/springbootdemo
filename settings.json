@@ -21,7 +21,7 @@
       "Value": "/usr/local/apache-maven"
     },
     {
-      "Namespace": "aws:elasticbeanstalk:environment",
+      "Namespace": "aws:elasticbeanstalk:application:environment",
       "OptionName": "SERVER_PORT",
       "Value": "5000"
     }
