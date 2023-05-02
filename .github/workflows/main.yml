@@ -46,8 +46,8 @@ jobs:
         aws configure set aws_access_key_id ${{ env.AWS_ACCESS_KEY_ID }}
         aws configure set aws_secret_access_key ${{ env.AWS_SECRET_ACCESS_KEY }}
         aws configure set region ${{ env.AWS_REGION }}
-        aws s3 cp target/my-app.jar s3://${{ env.S3_BUCKET }}/
-        aws elasticbeanstalk create-application-version --application-name ${{ env.APP_NAME }} --version-label ${{ github.sha }} --source-bundle S3Bucket="${{ env.S3_BUCKET }}",S3Key="my-app.jar"
+        aws s3 cp build/libs/my-app.jar s3://${{ env.S3_BUCKET }}/
+        aws elasticbeanstalk create-application-version --application-name ${{ env.APP_NAME }} --version-label ${{ github.sha }} --source-bundle S3Bucket="${{ env.S3_BUCKET }}",S3Key="build/libs/my-app.jar"
 
     - name: Deploy to Elastic Beanstalk
       run: |
