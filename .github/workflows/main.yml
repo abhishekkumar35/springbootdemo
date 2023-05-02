@@ -14,7 +14,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   S3_BUCKET: s3_sbdemo
   APP_NAME: app_sbdemo
-  ENV_NAME: env_sbdemo
+  ENV_NAME: prod
 
 jobs:
   deploy:
