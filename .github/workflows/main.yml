@@ -13,8 +13,8 @@ env:
   AWS_ACCESS_KEY_ID: ${{  secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   S3_BUCKET: sssbdemo
-  APP_NAME: app_sbdemo
-  ENV_NAME: prod
+  APP_NAME: appsbdemoo
+  ENV_NAME: prode
 
 jobs:
   deploy:
