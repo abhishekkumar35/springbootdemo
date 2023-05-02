@@ -1,0 +1,27 @@
+[
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "GRADLE_HOME",
+    "Value": "/usr/local/gradle"
+  },
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "JAVA_HOME",
+    "Value": "/usr/lib/jvm/java-11-amazon-corretto.x86_64"
+  },
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "M2",
+    "Value": "/usr/local/apache-maven/bin"
+  },
+  {
+    "Namespace": "aws:elasticbeanstalk:application:environment",
+    "OptionName": "M2_HOME",
+    "Value": "/usr/local/apache-maven"
+  },
+  {
+    "Namespace": "aws:elasticbeanstalk:environment",
+    "OptionName": "SERVER_PORT",
+    "Value": "5000"
+  }
+]
