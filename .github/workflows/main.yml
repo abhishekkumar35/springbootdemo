@@ -53,4 +53,4 @@ jobs:
     - name: Deploy to Elastic Beanstalk
       run: |
         aws elasticbeanstalk update-environment --application-name ${{ env.APP_NAME }} --environment-name ${{ env.ENV_NAME }} --version-label ${{ github.sha }} \
-             --option-settings-file settings.json
+             --cli-input-json file://settings.json
