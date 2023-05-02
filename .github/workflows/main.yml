@@ -14,8 +14,8 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   S3_BUCKET: sssbdemo
   APP_NAME: springbootdemo
-  ENV_ID: e-xpd3fihpgk
-  ENV_NAME: prod
+  ENV_ID: e-dcew7zkync
+  ENV_NAME: devv
 
 jobs:
   deploy:
